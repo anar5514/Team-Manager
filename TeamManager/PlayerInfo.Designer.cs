@@ -28,56 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.position = new System.Windows.Forms.Label();
-            this.number = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.Label();
+            this.playerPosition = new System.Windows.Forms.TextBox();
+            this.playerNumber = new System.Windows.Forms.TextBox();
+            this.playerSurname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // position
+            // playerPosition
             // 
-            this.position.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.position.Location = new System.Drawing.Point(31, 16);
-            this.position.Name = "position";
-            this.position.Size = new System.Drawing.Size(100, 23);
-            this.position.TabIndex = 0;
-            this.position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.playerPosition.Location = new System.Drawing.Point(28, 3);
+            this.playerPosition.Name = "playerPosition";
+            this.playerPosition.ReadOnly = true;
+            this.playerPosition.Size = new System.Drawing.Size(100, 20);
+            this.playerPosition.TabIndex = 0;
             // 
-            // number
+            // playerNumber
             // 
-            this.number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.number.Location = new System.Drawing.Point(193, 16);
-            this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(100, 23);
-            this.number.TabIndex = 1;
-            this.number.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.playerNumber.Location = new System.Drawing.Point(173, 3);
+            this.playerNumber.Name = "playerNumber";
+            this.playerNumber.Size = new System.Drawing.Size(116, 20);
+            this.playerNumber.TabIndex = 1;
             // 
-            // name
+            // playerSurname
             // 
-            this.name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.name.Location = new System.Drawing.Point(349, 16);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(100, 23);
-            this.name.TabIndex = 2;
-            this.name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.playerSurname.Location = new System.Drawing.Point(332, 3);
+            this.playerSurname.Name = "playerSurname";
+            this.playerSurname.Size = new System.Drawing.Size(100, 20);
+            this.playerSurname.TabIndex = 2;
             // 
             // PlayerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.name);
-            this.Controls.Add(this.number);
-            this.Controls.Add(this.position);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.playerSurname);
+            this.Controls.Add(this.playerNumber);
+            this.Controls.Add(this.playerPosition);
             this.Name = "PlayerInfo";
-            this.Size = new System.Drawing.Size(468, 52);
+            this.Size = new System.Drawing.Size(466, 27);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label position;
-        private System.Windows.Forms.Label number;
-        private System.Windows.Forms.Label name;
-        private System.Windows.Forms.UserControl playerInfo;
+        private System.Windows.Forms.TextBox playerPosition;
+        private System.Windows.Forms.TextBox playerNumber;
+        private System.Windows.Forms.TextBox playerSurname;
     }
 }
