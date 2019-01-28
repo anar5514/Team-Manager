@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Player));
             this.number = new System.Windows.Forms.Label();
             this.surname = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -55,14 +56,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TeamManager.Properties.Resources.player4;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.surname);
             this.Controls.Add(this.number);
             this.DoubleBuffered = true;
             this.Name = "Player";
-            this.Size = new System.Drawing.Size(61, 70);
+            this.Size = new System.Drawing.Size(63, 72);
             this.Load += new System.EventHandler(this.Player_Load);
             this.ResumeLayout(false);
 

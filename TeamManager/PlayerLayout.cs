@@ -24,8 +24,8 @@ namespace TeamManager
 
         private void PlayerLayout_Load(object sender, EventArgs e)
         {
-            BackgroundImage = Properties.Resources.playerlayoutpanel;
-            BackgroundImageLayout = ImageLayout.Stretch;
+            //BackgroundImage = Properties.Resources.playerlayoutpanel;
+            //BackgroundImageLayout = ImageLayout.Stretch;
 
             teamManager.Country = new ComboBox();
 
