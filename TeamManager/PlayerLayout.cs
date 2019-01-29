@@ -24,9 +24,6 @@ namespace TeamManager
 
         private void PlayerLayout_Load(object sender, EventArgs e)
         {
-            //BackgroundImage = Properties.Resources.playerlayoutpanel;
-            //BackgroundImageLayout = ImageLayout.Stretch;
-
             teamManager.Country = new ComboBox();
 
             var countryname = (teamManager.Country as string).Split('(', ')');
@@ -35,22 +32,17 @@ namespace TeamManager
 
             players = new Player[11];
 
-            //var arr = teamManager.Layout.ToString().Split('-');
-            //var a = arr[0];
-            //var b = arr[0];
-            //var c = arr[0];
-
             switch (teamManager.Layout)
             {
                 case "4-4-2":
-                    for (int i = 0, x1 = 70, x2 = 70, x3 = 170; i < players.Count(); i++)
+                    for (int i = 0, x1 = 60, x2 = 60, x3 = 160; i < players.Count(); i++)
                     {
                         if (i == 0)
                         {
                             players[i] = new Player();
                             players[i].PlayerNumber = playerInfo[i].NumberPlayer;
                             players[i].PlayerSurname = playerInfo[i].SurnamePlayer;
-                            players[i].Location = new Point(224, 450);
+                            players[i].Location = new Point(210, 470);
                         }
                         else if (i <= 4)
                         {
@@ -87,7 +79,7 @@ namespace TeamManager
                             players[i] = new Player();
                             players[i].PlayerNumber = playerInfo[i].NumberPlayer;
                             players[i].PlayerSurname = playerInfo[i].SurnamePlayer;
-                            players[i].Location = new Point(224, 450);
+                            players[i].Location = new Point(210, 470);
                         }
                         else if (i <= 4)
                         {
@@ -124,7 +116,7 @@ namespace TeamManager
                             players[i] = new Player();
                             players[i].PlayerNumber = playerInfo[i].NumberPlayer;
                             players[i].PlayerSurname = playerInfo[i].SurnamePlayer;
-                            players[i].Location = new Point(224, 450);
+                            players[i].Location = new Point(210, 470);
                         }
                         else if (i <= 5)
                         {

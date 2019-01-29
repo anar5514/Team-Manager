@@ -24,7 +24,7 @@ namespace TeamManager
         {
             //this.BackgroundImage = Properties.Resources.player4;
             //this.BackgroundImageLayout = ImageLayout.Stretch; 
-            surname.BackColor = Color.FromArgb(255, 0, 0);
+            
         }
     }
 }

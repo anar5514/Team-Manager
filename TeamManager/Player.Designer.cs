@@ -35,20 +35,20 @@
             // 
             // number
             // 
-            this.number.BackColor = System.Drawing.Color.Red;
+            this.number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(71)))), ((int)(((byte)(188)))));
             this.number.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number.Location = new System.Drawing.Point(21, 31);
+            this.number.Location = new System.Drawing.Point(23, 32);
             this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(22, 21);
+            this.number.Size = new System.Drawing.Size(14, 17);
             this.number.TabIndex = 2;
             this.number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // surname
             // 
-            this.surname.BackColor = System.Drawing.Color.Red;
+            this.surname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(1)))));
             this.surname.Location = new System.Drawing.Point(-1, 57);
             this.surname.Name = "surname";
-            this.surname.Size = new System.Drawing.Size(63, 13);
+            this.surname.Size = new System.Drawing.Size(64, 15);
             this.surname.TabIndex = 3;
             this.surname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
