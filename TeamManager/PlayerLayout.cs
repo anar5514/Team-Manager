@@ -49,7 +49,7 @@ namespace TeamManager
                             players[i] = new Player();
                             players[i].PlayerNumber = playerInfo[i].NumberPlayer;
                             players[i].PlayerSurname = playerInfo[i].SurnamePlayer;
-                            players[i].Location = new Point(x1, 346);
+                            players[i].Location = new Point(x1, 356);
                             x1 += 100;
                         }
                         else if (i <= 8)
@@ -72,7 +72,7 @@ namespace TeamManager
                     this.Controls.AddRange(players);
                     break;
                 case "4-3-3":
-                    for (int i = 0, x1 = 70, x2 = 120, x3 = 120; i < players.Count(); i++)
+                    for (int i = 0, x1 = 60, x2 = 110, x3 = 110; i < players.Count(); i++)
                     {
                         if (i == 0)
                         {
@@ -86,7 +86,7 @@ namespace TeamManager
                             players[i] = new Player();
                             players[i].PlayerNumber = playerInfo[i].NumberPlayer;
                             players[i].PlayerSurname = playerInfo[i].SurnamePlayer;
-                            players[i].Location = new Point(x1, 346);
+                            players[i].Location = new Point(x1, 356);
                             x1 += 100;
                         }
                         else if (i <= 7)
@@ -109,7 +109,7 @@ namespace TeamManager
                     this.Controls.AddRange(players);
                     break;
                 case "5-3-2":
-                    for (int i = 0, x1 = 15, x2 = 125, x3 = 170; i < players.Count(); i++)
+                    for (int i = 0, x1 = 60, x2 = 120, x3 = 160; i < players.Count(); i++)
                     {
                         if (i == 0)
                         {
@@ -123,8 +123,8 @@ namespace TeamManager
                             players[i] = new Player();
                             players[i].PlayerNumber = playerInfo[i].NumberPlayer;
                             players[i].PlayerSurname = playerInfo[i].SurnamePlayer;
-                            players[i].Location = new Point(x1, 346);
-                            x1 += 100;
+                            players[i].Location = new Point(x1, 356);
+                            x1 += 80;
                         }
                         else if (i <= 8)
                         {

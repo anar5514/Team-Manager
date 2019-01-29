@@ -37,9 +37,9 @@
             // 
             this.number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(71)))), ((int)(((byte)(188)))));
             this.number.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number.Location = new System.Drawing.Point(23, 32);
+            this.number.Location = new System.Drawing.Point(20, 23);
             this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(14, 17);
+            this.number.Size = new System.Drawing.Size(23, 25);
             this.number.TabIndex = 2;
             this.number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
