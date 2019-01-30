@@ -33,7 +33,7 @@ namespace TeamManager
 
             for (int i = 0, a = 100; i < listPlayer.Count(); i++, a += 50)
             {
-                listPlayer[i] = new PlayerInfo();
+                listPlayer[i] = new PlayerInfo(this);
                 listPlayer[i].Location = new Point(7, a);
             }
             this.Controls.AddRange(listPlayer);

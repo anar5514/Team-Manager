@@ -31,10 +31,13 @@
             this.playerPosition = new System.Windows.Forms.TextBox();
             this.playerNumber = new System.Windows.Forms.TextBox();
             this.playerSurname = new System.Windows.Forms.TextBox();
+            this.capitan = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // playerPosition
             // 
+            this.playerPosition.BackColor = System.Drawing.Color.SeaGreen;
+            this.playerPosition.ForeColor = System.Drawing.SystemColors.Menu;
             this.playerPosition.Location = new System.Drawing.Point(28, 3);
             this.playerPosition.Name = "playerPosition";
             this.playerPosition.ReadOnly = true;
@@ -43,6 +46,8 @@
             // 
             // playerNumber
             // 
+            this.playerNumber.BackColor = System.Drawing.Color.SeaGreen;
+            this.playerNumber.ForeColor = System.Drawing.SystemColors.Menu;
             this.playerNumber.Location = new System.Drawing.Point(173, 3);
             this.playerNumber.Name = "playerNumber";
             this.playerNumber.Size = new System.Drawing.Size(116, 20);
@@ -50,21 +55,33 @@
             // 
             // playerSurname
             // 
+            this.playerSurname.BackColor = System.Drawing.Color.SeaGreen;
+            this.playerSurname.ForeColor = System.Drawing.SystemColors.Menu;
             this.playerSurname.Location = new System.Drawing.Point(332, 3);
             this.playerSurname.Name = "playerSurname";
             this.playerSurname.Size = new System.Drawing.Size(100, 20);
             this.playerSurname.TabIndex = 2;
             // 
+            // capitan
+            // 
+            this.capitan.AutoSize = true;
+            this.capitan.Location = new System.Drawing.Point(3, 6);
+            this.capitan.Name = "capitan";
+            this.capitan.Size = new System.Drawing.Size(14, 13);
+            this.capitan.TabIndex = 3;
+            this.capitan.UseVisualStyleBackColor = true;
+            // 
             // PlayerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.Controls.Add(this.capitan);
             this.Controls.Add(this.playerSurname);
             this.Controls.Add(this.playerNumber);
             this.Controls.Add(this.playerPosition);
             this.Name = "PlayerInfo";
-            this.Size = new System.Drawing.Size(466, 27);
+            this.Size = new System.Drawing.Size(468, 29);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,5 +91,6 @@
         private System.Windows.Forms.TextBox playerPosition;
         private System.Windows.Forms.TextBox playerNumber;
         private System.Windows.Forms.TextBox playerSurname;
+        private System.Windows.Forms.RadioButton capitan;
     }
 }

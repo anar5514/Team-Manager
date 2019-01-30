@@ -41,19 +41,19 @@ namespace TeamManager
             // 
             // labelCountry
             // 
-            this.labelCountry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelCountry.Location = new System.Drawing.Point(36, 9);
+            this.labelCountry.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCountry.Location = new System.Drawing.Point(39, 11);
             this.labelCountry.Name = "labelCountry";
             this.labelCountry.Size = new System.Drawing.Size(137, 30);
             this.labelCountry.TabIndex = 10;
             this.labelCountry.Text = "Country";
-            this.labelCountry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelCountry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBoxCountry
             // 
             this.comboBoxCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCountry.FormattingEnabled = true;
-            this.comboBoxCountry.Location = new System.Drawing.Point(233, 18);
+            this.comboBoxCountry.Location = new System.Drawing.Point(182, 18);
             this.comboBoxCountry.Name = "comboBoxCountry";
             this.comboBoxCountry.Size = new System.Drawing.Size(170, 21);
             this.comboBoxCountry.TabIndex = 11;
@@ -70,6 +70,8 @@ namespace TeamManager
             // 
             // btnGenerate
             // 
+            this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnGenerate.Location = new System.Drawing.Point(256, 635);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(181, 50);
@@ -80,8 +82,8 @@ namespace TeamManager
             // 
             // labelPosition
             // 
-            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPosition.Location = new System.Drawing.Point(48, 57);
+            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPosition.Location = new System.Drawing.Point(40, 66);
             this.labelPosition.Name = "labelPosition";
             this.labelPosition.Size = new System.Drawing.Size(91, 23);
             this.labelPosition.TabIndex = 14;
@@ -89,8 +91,8 @@ namespace TeamManager
             // 
             // labelSurname
             // 
-            this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSurname.Location = new System.Drawing.Point(340, 57);
+            this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSurname.Location = new System.Drawing.Point(340, 66);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(97, 23);
             this.labelSurname.TabIndex = 15;
@@ -98,8 +100,8 @@ namespace TeamManager
             // 
             // labelNumber
             // 
-            this.labelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumber.Location = new System.Drawing.Point(204, 57);
+            this.labelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumber.Location = new System.Drawing.Point(200, 66);
             this.labelNumber.Name = "labelNumber";
             this.labelNumber.Size = new System.Drawing.Size(93, 23);
             this.labelNumber.TabIndex = 16;
@@ -109,6 +111,7 @@ namespace TeamManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(477, 684);
             this.Controls.Add(this.labelNumber);

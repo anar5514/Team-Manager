@@ -15,10 +15,13 @@ namespace TeamManager
         public string PositionPlayer { get => playerPosition.Text; set => playerPosition.Text = value; }
         public string NumberPlayer { get => playerNumber.Text; set => playerNumber.Text = value; }
         public string SurnamePlayer { get => playerSurname.Text; set => playerSurname.Text = value; }
+        TeamManager teamManager;
 
-        public PlayerInfo()
+        public PlayerInfo(TeamManager teamManager)
         {
+            this.teamManager = teamManager;
             InitializeComponent();
         }
+
     }
 }
