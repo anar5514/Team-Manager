@@ -63,6 +63,7 @@
             this.Controls.Add(this.labelCountryName);
             this.Controls.Add(this.flagSelectedCountry);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "PlayerLayout";
             this.Text = "PlayerLayout";
             this.Load += new System.EventHandler(this.PlayerLayout_Load);

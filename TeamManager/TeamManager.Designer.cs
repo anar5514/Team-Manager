@@ -51,7 +51,9 @@ namespace TeamManager
             // 
             // comboBoxCountry
             // 
+            this.comboBoxCountry.BackColor = System.Drawing.Color.LightGreen;
             this.comboBoxCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCountry.ForeColor = System.Drawing.Color.DarkGreen;
             this.comboBoxCountry.FormattingEnabled = true;
             this.comboBoxCountry.Location = new System.Drawing.Point(182, 18);
             this.comboBoxCountry.Name = "comboBoxCountry";
@@ -60,7 +62,9 @@ namespace TeamManager
             // 
             // comboBoxLayout
             // 
+            this.comboBoxLayout.BackColor = System.Drawing.Color.LightGreen;
             this.comboBoxLayout.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLayout.ForeColor = System.Drawing.Color.DarkGreen;
             this.comboBoxLayout.FormattingEnabled = true;
             this.comboBoxLayout.Location = new System.Drawing.Point(27, 651);
             this.comboBoxLayout.Name = "comboBoxLayout";
@@ -82,25 +86,25 @@ namespace TeamManager
             // 
             // labelPosition
             // 
-            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPosition.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPosition.Location = new System.Drawing.Point(40, 66);
             this.labelPosition.Name = "labelPosition";
-            this.labelPosition.Size = new System.Drawing.Size(91, 23);
+            this.labelPosition.Size = new System.Drawing.Size(105, 23);
             this.labelPosition.TabIndex = 14;
             this.labelPosition.Text = "Position";
             // 
             // labelSurname
             // 
-            this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSurname.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSurname.Location = new System.Drawing.Point(340, 66);
             this.labelSurname.Name = "labelSurname";
-            this.labelSurname.Size = new System.Drawing.Size(97, 23);
+            this.labelSurname.Size = new System.Drawing.Size(111, 23);
             this.labelSurname.TabIndex = 15;
             this.labelSurname.Text = "Surname";
             // 
             // labelNumber
             // 
-            this.labelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumber.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumber.Location = new System.Drawing.Point(200, 66);
             this.labelNumber.Name = "labelNumber";
             this.labelNumber.Size = new System.Drawing.Size(93, 23);
@@ -121,6 +125,7 @@ namespace TeamManager
             this.Controls.Add(this.comboBoxLayout);
             this.Controls.Add(this.comboBoxCountry);
             this.Controls.Add(this.labelCountry);
+            this.MaximizeBox = false;
             this.Name = "TeamManager";
             this.Text = "Team Manager";
             this.Load += new System.EventHandler(this.TeamManager_Load);

@@ -47,9 +47,19 @@ namespace TeamManager
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
-        {
-            PlayerLayout playerLayout = new PlayerLayout(this, ListPlayer);
-            playerLayout.ShowDialog();
+        {           
+            if(comboBoxCountry.SelectedItem == null && comboBoxLayout.SelectedItem == null)
+                MessageBox.Show("Please, fill the area that is important ", "Error");
+            else if (comboBoxCountry.SelectedItem == null)
+                MessageBox.Show("Please, fill the area that include countries", "Error");
+            else if(comboBoxLayout.SelectedItem == null)
+                MessageBox.Show("Please, fill the area that include layouts", "Error");
+            else
+            {
+                PlayerLayout playerLayout = new PlayerLayout(this, ListPlayer);
+                playerLayout.ShowDialog();
+            }
+
         }
 
         private void comboBoxLayout_SelectedIndexChanged(object sender, EventArgs e)

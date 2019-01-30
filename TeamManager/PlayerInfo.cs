@@ -23,5 +23,26 @@ namespace TeamManager
             InitializeComponent();
         }
 
+        private void playerSurname_TextChanged(object sender, EventArgs e)
+        {
+            var sender1 = (sender as TextBox);
+            var control = int.TryParse(sender1.Text, out int number);
+            if (control)
+            {
+                sender1.Text = string.Empty;
+            }
+
+        }
+
+        private void playerNumber_TextChanged(object sender, EventArgs e)
+        {
+            var sender1 = (sender as TextBox);
+            var  control = int.TryParse(sender1.Text, out int number);
+            if (!control)
+            {
+                sender1.Text = string.Empty;
+            }
+            
+        }
     }
 }
